@@ -1,0 +1,1802 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu hỏi trắc nghiệm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+        .quiz-box {
+            width: 400px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h3 {
+            margin-bottom: 15px;
+        }
+        .answer {
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .answer:hover {
+            background: #eee;
+        }
+        .correct {
+            background: #c8f7c5;
+            border-color: green;
+            color: green;
+            font-weight: bold;
+        }
+        .wrong {
+            background: #f7c5c5;
+            border-color: red;
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="quiz-box">
+<h3>Câu 1: Hoạt động quản lý có những yếu tố chính nào?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Chủ thể quản lý, mục tiêu cần đạt được</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Chủ thể quản lý, đối tượng quản lý</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. Đối tượng quản lý, chủ thể quản lý, mục tiêu cần đạt được, môi trường quản lý</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Đối tượng quản lý, mục tiêu cần đạt được, môi trường quản lý</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 2: Trong hoạt động sản xuất của một nhà máy, đâu là đối tượng quản lý?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">a. Cán bộ công nhân viên</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Giám đốc, ban giám đốc</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Năng suất lao động</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Lợi nhuận của công ty</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 3: Trong hoạt động sản xuất của một nhà máy, đâu là môi trường hoạt động?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Cán bộ công nhân viên và ban giám đốc</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Điều kiện làm việc trong nhà máy</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. Điều kiện làm việc trong nhà máy, tình hình kinh tế chính trị, khí hậu...</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Lợi nhuận của công ty, lương thưởng cho nhân viên</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 4: Điều nào sau đây không phải là lợi thế tiềm năng của việc sử dụng quản lý dự án tốt?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Thời gian phát triển ngắn hơn</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Tinh thần công nhân cao hơn</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. Chi phí vốn thấp hơn</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Biên lợi nhuận cao hơn</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 5: Khoảng bao nhiêu phần trăm tổng sản phẩm thế giới được chi cho các dự án?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. 10 phần trăm</div>
+<div class="answer" onclick="checkAnswer(this,true)">b. 25 phần trăm</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. 50 phần trăm</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. 75 phần trăm</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 6: Là một nỗ lực tạm thời được thực hiện để tạo ra một sản phẩm, dịch vụ hoặc kết quả duy nhất</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Chương trình</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Quá trình</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. Dự án (project)</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Danh mục đầu tư</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 7: Phát biểu nào sau đây về khái niệm quản lý là đúng?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Quản lý là nghệ thuật đạt mục đích thông qua nỗ lực của người khác</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Quản lý là nghệ thuật, khoa học, là một nghề</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Quản lý là quá trình lập kế hoạch, tổ chức, chỉ huy và kiểm tra nguồn lực</div>
+<div class="answer" onclick="checkAnswer(this,true)">d. Tất cả các đáp án đều đúng</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 8: Thuộc tính nào sau đây không phải là thuộc tính của dự án?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">d. Dự án là duy nhất</div>
+<div class="answer" onclick="checkAnswer(this,false)">e. Các dự án được phát triển bằng cách sử dụng công phu tiến bộ</div>
+<div class="answer" onclick="checkAnswer(this,false)">f. Dự án có khách hàng chính hoặc nhà tài trợ</div>
+<div class="answer" onclick="checkAnswer(this,true)">g. Các dự án liên quan ít đến sự không chắc chắn</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 9: Đâu là hình thức kết thúc dự án lý tưởng?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">a. Đạt mục tiêu đề ra và nghiệm thu kết quả đúng thời hạn</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Hết kinh phí trước thời hạn</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Đến ngày deadline nhưng chưa hoàn thành</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Không có đáp án đúng</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 10: Theo thống kê, các dự án thất bại phần lớn là do:</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Ước lượng sai phạm vi</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Thiếu thông tin</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Không rõ mục tiêu</div>
+<div class="answer" onclick="checkAnswer(this,true)">d. Quản lý dự án kém</div>
+</div>
+<div class="quiz-box">
+<h3>Câu 11: Ai là người chịu trách nhiệm chính về kết quả của dự án?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Tổ dự án</div>
+<div class="answer" onclick="checkAnswer(this,true)">b. Người quản lý dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Chủ đầu tư</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Khách hàng</div>
+<div class="answer" onclick="checkAnswer(this,false)">e. Tất cả các đáp án trên</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 12: Ai là người phê duyệt dự án, quyết định cho dự án đi tiếp hay dừng lại?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Tổ dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Người quản lý dự án</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. Chủ đầu tư</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Khách hàng</div>
+<div class="answer" onclick="checkAnswer(this,false)">e. Tất cả các đáp án trên</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 13: Ai là người hưởng thụ kết quả của dự án?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Tổ dự án, người quản lý dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Người quản lý dự án, chủ đầu tư</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. Chủ đầu tư, khách hàng</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Khách hàng, người quản lý dự án</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 14: Người quản lý dự án và tổ dự án được bổ nhiệm bởi?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">a. Ban quản lý dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Ban quản lý dự án và khách hàng</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Chủ đầu tư</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Chủ đầu tư và ban quản lý dự án</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 15: Ai là người có lợi ích liên quan trực tiếp đến dự án?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Khách hàng, chủ đầu tư</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Ban quản lý dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Người quản lý dự án, tổ dự án</div>
+<div class="answer" onclick="checkAnswer(this,true)">D. Tất cả các đáp án trên</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 16: Theo Bull survey (1998), nguyên nhân lớn nhất khiến dự án thất bại?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Không kiểm soát chất lượng</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Vượt quá chi phí</div>
+<div class="answer" onclick="checkAnswer(this,true)">C. Giao tiếp kém giữa các thành phần</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Không có đáp án đúng</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 17: Đâu là đối tượng được quản lý bởi hoạt động quản lý dự án?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Năng suất, thời gian, nhân viên, chi phí</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Khởi tạo, lập lịch, thực thi, kết thúc</div>
+<div class="answer" onclick="checkAnswer(this,true)">C. Phạm vi, chi phí, nhân sự, chất lượng, rủi ro</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. A và B đúng</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 18: Áp dụng kiến thức, kỹ năng, công cụ vào hoạt động dự án gọi là?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">a. Quản lý dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Quản lý chương trình</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Quản lý danh mục</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Quản lý yêu cầu</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 19: Danh sách tất cả những gì dự án phải làm hoặc không làm?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. WBS</div>
+<div class="answer" onclick="checkAnswer(this,true)">b. Phạm vi dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Phác thảo công việc</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Project Charter</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 20: Kết quả dự án CNTT chuyển giao có thể là?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Phần cứng, phần mềm</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Tài liệu, đào tạo, bảo hành</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. Cả 2 đáp án trên</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Không có đáp án đúng</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 21: ______ đảm bảo mọi người hiểu rõ sản phẩm và quy trình dự án?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">a. Project scope management</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Purpose</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Objectives</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Quality</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 22: Quá trình xây dựng tài liệu nền tảng về phạm vi dự án?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Quản lý phạm vi</div>
+<div class="answer" onclick="checkAnswer(this,true)">b. Xác định phạm vi</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Kiểm soát phạm vi</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Cả 3 đáp án</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 23: Việc điều chỉnh nhỏ về phạm vi gọi là?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">a. Scope Creep</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Scope Statement</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Project Justification</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Goal</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 24: Lợi ích của việc xác định đúng phạm vi?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Cải tiến thời gian, chi phí</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Đo hiệu suất và điều khiển</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Rõ trách nhiệm</div>
+<div class="answer" onclick="checkAnswer(this,true)">d. Cả 3 đáp án trên</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 25: Tài liệu phân rã dự án thành các phần nhỏ?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Statement of Work</div>
+<div class="answer" onclick="checkAnswer(this,true)">b. Work Breakdown Structure</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Project Charter</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Project Justification</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 26: Căn cứ để xác định trách nhiệm, chi phí, lịch trình?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Statement of Work</div>
+<div class="answer" onclick="checkAnswer(this,true)">b. Work Breakdown Structure</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Project Charter</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Project Justification</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 27: Để xác định độ sâu phân rã WBS cần trả lời?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Hiểu được chức năng node?</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Kiểm soát tiến trình?</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Work package đủ nhỏ?</div>
+<div class="answer" onclick="checkAnswer(this,true)">d. Tất cả các đáp án</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 28: Thông tin xây dựng WBS lấy từ?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. SOW, báo cáo khả thi</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Sơ đồ tổ chức, thủ tục</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. Tất cả các tài liệu trên</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Không có đáp án đúng</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 29: Nhiệm vụ KHÔNG thuộc giai đoạn khởi tạo?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Chọn người quản lý dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Thu thập quy trình, dữ liệu</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Chia dự án lớn thành giai đoạn</div>
+<div class="answer" onclick="checkAnswer(this,true)">d. Tạo WBS</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 30: Nhiệm vụ thuộc giai đoạn khởi tạo dự án?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Xác định nhóm lập kế hoạch</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Xác định và ưu tiên yêu cầu</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. Đánh giá tính khả thi của dự án và sản phẩm trong phạm vi các ràng buộc được đưa ra</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Ước tính chi phí và thời lượng</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 31: Việc xác định các bên liên quan được thực hiện trong giai đoạn nào?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">a. Khởi tạo dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Lập kế hoạch dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Thực hiện dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Giám sát và kiểm soát dự án</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 32: Đánh giá tính khả thi dự án được thực hiện trong giai đoạn nào?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">a. Khởi tạo dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Lập kế hoạch dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Thực hiện dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Đóng dự án</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 33: Xây dựng điều lệ dự án được thực hiện trong giai đoạn nào?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">a. Khởi tạo dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Lập kế hoạch dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Thực hiện dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Giám sát và kiểm soát dự án</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 34: Nhiệm vụ KHÔNG thuộc giai đoạn lập kế hoạch dự án phần mềm?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Xác định phương pháp phát triển</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Xác định nhóm lập kế hoạch</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Tạo WBS</div>
+<div class="answer" onclick="checkAnswer(this,true)">d. Tạo mục tiêu đo lường</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 35: Nhiệm vụ thuộc giai đoạn lập kế hoạch dự án phần mềm?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Tuyển dụng nhân sự</div>
+<div class="answer" onclick="checkAnswer(this,true)">b. Ước tính thời lượng, chi phí hoạt động và yêu cầu về tài nguyên</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Cập nhật kế hoạch quản lý dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Tạo các dự báo</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 36: Thành phần KHÔNG thuộc WBS?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Tên dự án, tên công việc</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Danh sách công việc</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. Thời gian thực hiện công việc</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Danh sách sản phẩm</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 37: Tuyển dụng nhân sự có thể thực hiện ở giai đoạn nào?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Khởi tạo và lập kế hoạch</div>
+<div class="answer" onclick="checkAnswer(this,true)">b. Thực hiện và giám sát, kiểm soát</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Đóng dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Tất cả các giai đoạn</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 38: Xác định nội dung cần mua sắm thực hiện ở giai đoạn nào?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Khởi tạo dự án</div>
+<div class="answer" onclick="checkAnswer(this,true)">b. Lập kế hoạch dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Thực hiện dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Đóng dự án</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 39: Nhiệm vụ KHÔNG thuộc giai đoạn lập kế hoạch?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Tạo sơ đồ mạng</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Lập lịch biểu</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. Lập chỉ mục và lưu trữ hồ sơ</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Lên ngân sách</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 40: Nhiệm vụ thuộc giai đoạn thực hiện dự án?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Theo dõi và kiểm soát</div>
+<div class="answer" onclick="checkAnswer(this,true)">b. Tạo ra sản phẩm bàn giao</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Kiểm soát thay đổi phạm vi</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Cập nhật kế hoạch quản lý</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 41: Nhiệm vụ KHÔNG thuộc giai đoạn thực hiện?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Thực hiện thay đổi đã phê duyệt</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Xây dựng nhóm</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Khen thưởng</div>
+<div class="answer" onclick="checkAnswer(this,true)">d. Phê duyệt hoặc từ chối thay đổi</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 42: Nhiệm vụ KHÔNG thuộc giai đoạn thực hiện?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Thực hiện công việc theo kế hoạch</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Thực hiện kế hoạch dự phòng</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. Cập nhật kế hoạch quản lý dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Thực hiện theo quy trình</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 43: Nhiệm vụ KHÔNG thuộc giai đoạn thực hiện?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Tổ chức họp</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Thực hiện kế hoạch dự phòng</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. Báo cáo hiệu suất dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Bàn giao sản phẩm</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 44: Xây dựng tài liệu kỹ thuật thuộc giai đoạn nào?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Khởi tạo</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Lập kế hoạch</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. Thực hiện</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Giám sát và kiểm soát</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 45: Kiểm tra chất lượng sản phẩm thuộc giai đoạn nào?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Lập kế hoạch</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Thực hiện</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. Giám sát và kiểm soát</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Đóng dự án</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 46: Cập nhật kế hoạch và tài liệu dự án thuộc giai đoạn nào?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Lập kế hoạch</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Thực hiện</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. Giám sát và kiểm soát</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Đóng dự án</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 47: Nhiệm vụ thuộc giám sát & kiểm soát?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">a. Thu thập dữ liệu hiệu suất</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Xây dựng nhóm</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Khen thưởng</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Kiểm thử sản phẩm</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 48: Điều nào KHÔNG thuộc ràng buộc quản lý dự án?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Phạm vi</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Thời gian</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. Truyền thông</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Chi phí</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 49: Quản lý danh mục vs quản lý dự án giải quyết mục tiêu?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">a. Chiến lược, chiến thuật</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Chiến thuật, chiến lược</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Bên trong, bên ngoài</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Bên ngoài, bên trong</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 50: Nhiều dự án cùng chức năng nên quản lý như?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Danh mục đầu tư</div>
+<div class="answer" onclick="checkAnswer(this,true)">b. Chương trình</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Sự đầu tư</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Hợp tác</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 51: Chứng chỉ phổ biến của PMI?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. CPM</div>
+<div class="answer" onclick="checkAnswer(this,true)">b. PMP</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. PME</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. PMM</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 52: Dự án CNTT khác vì rất _____?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Đắt tiền</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Kỹ thuật</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. Phong phú</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Thách thức</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 53: Quy trình điều phối nguồn lực để tạo sản phẩm?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Khởi xướng</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Lập kế hoạch</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. Thực thi</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Giám sát và kiểm soát</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 54: Nhóm quy trình cần nhiều tài nguyên nhất?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Lập kế hoạch</div>
+<div class="answer" onclick="checkAnswer(this,true)">b. Thực thi</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Giám sát và kiểm soát</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Đóng</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 55: WBS, tiến độ, chi phí là đầu ra của quá trình?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Khởi xướng</div>
+<div class="answer" onclick="checkAnswer(this,true)">b. Lập kế hoạch</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Thi hành</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Giám sát và kiểm soát</div>
+<div class="answer" onclick="checkAnswer(this,false)">e. Đóng</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 56: Đo lường tiến độ và hành động khắc phục?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Khởi xướng</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Lập kế hoạch</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Thực thi</div>
+<div class="answer" onclick="checkAnswer(this,true)">d. Giám sát và kiểm soát</div>
+<div class="answer" onclick="checkAnswer(this,false)">e. Đóng</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 57: KHÔNG phải lý do dùng cách tiếp cận dự đoán?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">a. Yêu cầu không rõ ràng</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Nhóm thiếu kinh nghiệm</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Rủi ro lớn</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Deadline cứng</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 58: Dùng ____ để có định dạng chuẩn tài liệu?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Phương pháp luận</div>
+<div class="answer" onclick="checkAnswer(this,true)">b. Mẫu (template)</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Phần mềm</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Tiêu chuẩn</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 59: KHÔNG thuộc quản lý tích hợp dự án?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">a. Phát triển trường hợp kinh doanh</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Xây dựng điều lệ</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Kế hoạch quản lý</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Kết thúc dự án</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 60: Bước cuối của quy trình lựa chọn dự án CNTT?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Hoạch định chiến lược CNTT</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Phân tích lĩnh vực</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Sơ đồ tư duy</div>
+<div class="answer" onclick="checkAnswer(this,true)">d. Phân bổ nguồn lực</div>
+</div>
+<div class="quiz-box">
+  <h3>Câu 61: Điều nào sau đây không phải là phương pháp hay nhất cho các dự án phát triển sản phẩm mới?</h3>
+  <div class="answer" onclick="checkAnswer(this,false)">a. sắp xếp các dự án và nguồn lực với chiến lược kinh doanh</div>
+  <div class="answer" onclick="checkAnswer(this,true)">b. lựa chọn các dự án sẽ mất ít hơn hai năm để hoàn vốn</div>
+  <div class="answer" onclick="checkAnswer(this,false)">c. tập trung vào nhu cầu của khách hàng trong việc xác định các dự án</div>
+  <div class="answer" onclick="checkAnswer(this,false)">d. phân công quản lý dự án chủ trì dự án</div>
+</div>
+
+<div class="quiz-box">
+  <h3>Câu 62: Luật mới của chính phủ yêu cầu tổ chức phải báo cáo dữ liệu theo cách mới. Danh mục nào sẽ bao gồm dự án này?</h3>
+  <div class="answer" onclick="checkAnswer(this,false)">a. vấn đề</div>
+  <div class="answer" onclick="checkAnswer(this,false)">b. cơ hội</div>
+  <div class="answer" onclick="checkAnswer(this,true)">c. chỉ thị (directive)</div>
+  <div class="answer" onclick="checkAnswer(this,false)">d. quy định</div>
+</div>
+
+<div class="quiz-box">
+  <h3>Câu 63: Tài liệu chính thức công nhận sự tồn tại của một dự án là gì?</h3>
+  <div class="answer" onclick="checkAnswer(this,true)">a. điều lệ dự án (project charter)</div>
+  <div class="answer" onclick="checkAnswer(this,false)">b. hợp đồng</div>
+  <div class="answer" onclick="checkAnswer(this,false)">c. trường hợp kinh doanh</div>
+  <div class="answer" onclick="checkAnswer(this,false)">d. kế hoạch quản lý dự án</div>
+</div>
+
+<div class="quiz-box">
+  <h3>Câu 64: Nội dung nào sau đây thường không có trong điều lệ dự án?</h3>
+  <div class="answer" onclick="checkAnswer(this,false)">a. tên của người quản lý dự án</div>
+  <div class="answer" onclick="checkAnswer(this,false)">b. thông tin ngân sách</div>
+  <div class="answer" onclick="checkAnswer(this,false)">c. chữ ký của các bên liên quan</div>
+  <div class="answer" onclick="checkAnswer(this,true)">d. biểu đồ Gantt</div>
+</div>
+
+<div class="quiz-box">
+  <h3>Câu 65: Điều gì đảm bảo mô tả sản phẩm của dự án chính xác và đầy đủ?</h3>
+  <div class="answer" onclick="checkAnswer(this,true)">a. quản lý cấu hình</div>
+  <div class="answer" onclick="checkAnswer(this,false)">b. kiểm soát thay đổi tích hợp</div>
+  <div class="answer" onclick="checkAnswer(this,false)">c. quản lý tích hợp</div>
+  <div class="answer" onclick="checkAnswer(this,false)">d. bảng điều khiển thay đổi</div>
+</div>
+
+<div class="quiz-box">
+  <h3>Câu 66: Điều nào sau đây không phải gợi ý cho kiểm soát thay đổi tích hợp?</h3>
+  <div class="answer" onclick="checkAnswer(this,false)">a. sử dụng quản lý cấu hình tốt</div>
+  <div class="answer" onclick="checkAnswer(this,true)">b. giảm thiểu sự thay đổi</div>
+  <div class="answer" onclick="checkAnswer(this,false)">c. thiết lập hệ thống kiểm soát thay đổi chính thức</div>
+  <div class="answer" onclick="checkAnswer(this,false)">d. xem quản lý dự án là quá trình liên lạc và đàm phán liên tục</div>
+</div>
+
+<div class="quiz-box">
+  <h3>Câu 67: Khái niệm giới thiệu các công việc tạo ra sản phẩm dự án là gì?</h3>
+  <div class="answer" onclick="checkAnswer(this,false)">a. giao hàng</div>
+  <div class="answer" onclick="checkAnswer(this,false)">b. các mốc quan trọng</div>
+  <div class="answer" onclick="checkAnswer(this,true)">c. phạm vi (scope)</div>
+  <div class="answer" onclick="checkAnswer(this,false)">d. phát triển sản phẩm</div>
+</div>
+
+<div class="quiz-box">
+  <h3>Câu 68: Kỹ thuật thu thập yêu cầu nào tốn kém và mất thời gian nhất?</h3>
+  <div class="answer" onclick="checkAnswer(this,true)">a. phỏng vấn</div>
+  <div class="answer" onclick="checkAnswer(this,false)">b. nhóm tập trung</div>
+  <div class="answer" onclick="checkAnswer(this,false)">c. khảo sát</div>
+  <div class="answer" onclick="checkAnswer(this,false)">d. quan sát</div>
+</div>
+
+<div class="quiz-box">
+  <h3>Câu 69: Nhóm công việc theo định hướng sản phẩm xác định toàn bộ phạm vi dự án là gì?</h3>
+  <div class="answer" onclick="checkAnswer(this,false)">a. tuyên bố phạm vi</div>
+  <div class="answer" onclick="checkAnswer(this,true)">b. WBS</div>
+  <div class="answer" onclick="checkAnswer(this,false)">c. từ điển WBS</div>
+  <div class="answer" onclick="checkAnswer(this,false)">d. gói công việc</div>
+</div>
+
+<div class="quiz-box">
+  <h3>Câu 70: Cách tiếp cận phát triển WBS theo dạng phi tuyến là gì?</h3>
+  <div class="answer" onclick="checkAnswer(this,false)">a. từ trên xuống</div>
+  <div class="answer" onclick="checkAnswer(this,false)">b. từ dưới lên</div>
+  <div class="answer" onclick="checkAnswer(this,false)">c. sự giống nhau</div>
+  <div class="answer" onclick="checkAnswer(this,true)">d. sơ đồ tư duy</div>
+</div>
+
+<div class="quiz-box">
+  <h3>Câu 71: Điều nào không phải phương pháp hay nhất để tránh vấn đề phạm vi?</h3>
+  <div class="answer" onclick="checkAnswer(this,false)">a. giữ phạm vi thực tế</div>
+  <div class="answer" onclick="checkAnswer(this,false)">b. sử dụng phần cứng, phần mềm có sẵn</div>
+  <div class="answer" onclick="checkAnswer(this,false)">c. tuân theo quy trình quản lý dự án tốt</div>
+  <div class="answer" onclick="checkAnswer(this,true)">d. không liên quan quá nhiều người dùng</div>
+</div>
+
+<div class="quiz-box">
+  <h3>Câu 72: Phần mềm quản lý dự án giúp phát triển cái gì làm cơ sở cho biểu đồ Gantt?</h3>
+  <div class="answer" onclick="checkAnswer(this,false)">a. kế hoạch dự án</div>
+  <div class="answer" onclick="checkAnswer(this,false)">b. lịch trình</div>
+  <div class="answer" onclick="checkAnswer(this,true)">c. WBS</div>
+  <div class="answer" onclick="checkAnswer(this,false)">d. có thể giao hàng</div>
+</div>
+
+<div class="quiz-box">
+  <h3>Câu 73: Quy trình xác định chính sách và thủ tục quản lý tiến độ là gì?</h3>
+  <div class="answer" onclick="checkAnswer(this,true)">a. lập kế hoạch quản lý lịch trình</div>
+  <div class="answer" onclick="checkAnswer(this,false)">b. xác định các hoạt động</div>
+  <div class="answer" onclick="checkAnswer(this,false)">c. ước tính nguồn lực hoạt động</div>
+  <div class="answer" onclick="checkAnswer(this,false)">d. trình tự hoạt động</div>
+</div>
+
+<div class="quiz-box">
+  <h3>Câu 74: Sơ đồ nào thể hiện tiến độ kế hoạch và thực tế?</h3>
+  <div class="answer" onclick="checkAnswer(this,false)">a. sơ đồ mạng</div>
+  <div class="answer" onclick="checkAnswer(this,false)">b. biểu đồ Gantt</div>
+  <div class="answer" onclick="checkAnswer(this,true)">c. biểu đồ Gantt theo dõi</div>
+  <div class="answer" onclick="checkAnswer(this,false)">d. biểu đồ cột mốc</div>
+</div>
+
+<div class="quiz-box">
+  <h3>Câu 75: Kỹ thuật dự đoán tổng thời lượng dự án là gì?</h3>
+  <div class="answer" onclick="checkAnswer(this,false)">a. PERT</div>
+  <div class="answer" onclick="checkAnswer(this,false)">b. biểu đồ Gantt</div>
+  <div class="answer" onclick="checkAnswer(this,true)">c. phương pháp đường dẫn quan trọng</div>
+  <div class="answer" onclick="checkAnswer(this,false)">d. va chạm</div>
+</div>
+
+<div class="quiz-box">
+  <h3>Câu 76: Mục tiêu chính của quản lý chi phí dự án là gì?</h3>
+  <div class="answer" onclick="checkAnswer(this,false)">a. hoàn thành với chi phí thấp nhất</div>
+  <div class="answer" onclick="checkAnswer(this,true)">b. hoàn thành đúng ngân sách, thời gian, chất lượng</div>
+  <div class="answer" onclick="checkAnswer(this,false)">c. cung cấp thông tin chi phí chính xác</div>
+  <div class="answer" onclick="checkAnswer(this,false)">d. sử dụng tiền một cách khôn ngoan</div>
+</div>
+
+<div class="quiz-box">
+  <h3>Câu 77: Lỗ 5 đô trên 100 đô doanh thu thì tỷ lệ lợi nhuận là bao nhiêu?</h3>
+  <div class="answer" onclick="checkAnswer(this,true)">a. -5 phần trăm</div>
+  <div class="answer" onclick="checkAnswer(this,false)">b. 5 phần trăm</div>
+  <div class="answer" onclick="checkAnswer(this,false)">c. 5 đô</div>
+  <div class="answer" onclick="checkAnswer(this,false)">d. 100 đô</div>
+</div>
+
+<div class="quiz-box">
+  <h3>Câu 78: Phân bổ dự toán chi phí theo thời gian gọi là gì?</h3>
+  <div class="answer" onclick="checkAnswer(this,false)">a. phân tích dự trữ</div>
+  <div class="answer" onclick="checkAnswer(this,false)">b. chu kỳ sống chi phí</div>
+  <div class="answer" onclick="checkAnswer(this,true)">c. lập ngân sách chi phí dự án</div>
+  <div class="answer" onclick="checkAnswer(this,false)">d. phân tích giá trị kiếm được</div>
+</div>
+
+<div class="quiz-box">
+  <h3>Câu 79: Kỹ thuật tích hợp phạm vi, thời gian và chi phí là gì?</h3>
+  <div class="answer" onclick="checkAnswer(this,false)">a. phân tích dự trữ</div>
+  <div class="answer" onclick="checkAnswer(this,false)">b. chu kỳ sống chi phí</div>
+  <div class="answer" onclick="checkAnswer(this,false)">c. lập ngân sách chi phí</div>
+  <div class="answer" onclick="checkAnswer(this,true)">d. quản lý giá trị thu được</div>
+</div>
+
+<div class="quiz-box">
+  <h3>Câu 80: SPI = 110%, CPI = 95% thì dự án như thế nào?</h3>
+  <div class="answer" onclick="checkAnswer(this,false)">a. vượt tiến độ, dưới ngân sách</div>
+  <div class="answer" onclick="checkAnswer(this,true)">b. vượt tiến độ, vượt ngân sách</div>
+  <div class="answer" onclick="checkAnswer(this,false)">c. chậm tiến độ, dưới ngân sách</div>
+  <div class="answer" onclick="checkAnswer(this,false)">d. chậm tiến độ, vượt ngân sách</div>
+</div>
+
+<div class="quiz-box">
+  <h3>Câu 81: Mức độ các đặc tính đáp ứng yêu cầu gọi là gì?</h3>
+  <div class="answer" onclick="checkAnswer(this,true)">a. chất lượng</div>
+  <div class="answer" onclick="checkAnswer(this,false)">b. sự phù hợp với yêu cầu</div>
+  <div class="answer" onclick="checkAnswer(this,false)">c. thể dục để sử dụng</div>
+  <div class="answer" onclick="checkAnswer(this,false)">d. độ tin cậy</div>
+</div>
+
+<div class="quiz-box">
+  <h3>Câu 82: Mục đích của quản lý chất lượng dự án là gì?</h3>
+  <div class="answer" onclick="checkAnswer(this,false)">a. tạo sản phẩm chất lượng cao nhất</div>
+  <div class="answer" onclick="checkAnswer(this,false)">b. đáp ứng tiêu chuẩn chất lượng</div>
+  <div class="answer" onclick="checkAnswer(this,false)">c. đáp ứng nhu cầu dự án</div>
+  <div class="answer" onclick="checkAnswer(this,true)">d. tất cả các ý trên</div>
+</div>
+
+<div class="quiz-box">
+  <h3>Câu 83: Phụ thuộc công việc do bản chất tự nhiên gọi là gì?</h3>
+  <div class="answer" onclick="checkAnswer(this,true)">a. phụ thuộc bắt buộc</div>
+  <div class="answer" onclick="checkAnswer(this,false)">b. phụ thuộc tùy chọn</div>
+  <div class="answer" onclick="checkAnswer(this,false)">c. phụ thuộc ngoài</div>
+  <div class="answer" onclick="checkAnswer(this,false)">d. phụ thuộc trong</div>
+</div>
+
+<div class="quiz-box">
+  <h3>Câu 84: Phụ thuộc công việc do đội dự án quy định gọi là gì?</h3>
+  <div class="answer" onclick="checkAnswer(this,false)">a. phụ thuộc bắt buộc</div>
+  <div class="answer" onclick="checkAnswer(this,true)">b. phụ thuộc tùy chọn</div>
+  <div class="answer" onclick="checkAnswer(this,false)">c. phụ thuộc ngoài</div>
+  <div class="answer" onclick="checkAnswer(this,false)">d. phụ thuộc trong</div>
+</div>
+<div class="quiz-box">
+<h3>Câu 85: Biểu đồ thể hiện những quan hệ logic giữa những hoạt động hay trình tự của chúng còn được gọi là:</h3>
+<div class="answer" onclick="checkAnswer(this,true)">a. Biểu đồ mạng</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Biểu đồ hoạt động</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Biểu đồ Gantt</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Không có đáp án đúng</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 86: Trước khi ước tính thời gian của mỗi hoạt động, công việc cần phải làm là:</h3>
+<div class="answer" onclick="checkAnswer(this,true)">a. Định lượng loại tài nguyên sẽ được gán cho hoạt động đó</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Vẽ biểu đồ Gantt</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Vẽ biểu đồ hoạt động</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Vẽ biểu đồ mạng</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 87: _______ bao gồm lượng thời gian làm việc thực sự cộng với thời gian chờ.</h3>
+<div class="answer" onclick="checkAnswer(this,true)">a. Thời gian nỗ lực</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Thời gian tiêu tốn</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Thời gian dự kiến</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Thời gian quá hạn</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 88: Cơ sở cho việc theo dõi sự tiến triển theo thời gian của dự án là:</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Bản phân rã cấu trúc công việc</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Bản phác thảo dự án</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. Lịch biểu dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Không có đáp án đúng</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 89: Biểu đồ nào sau đây còn được gọi là Biểu đồ Thanh (Bar)?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">a. Gantt</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. AOA</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. PERT</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Critical Path Analysis</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 90: Trong biểu đồ Gantt, biểu tượng nào dùng để biểu diễn nhiệm vụ tổng hợp (summary task)?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Hình thoi đen</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Hình thoi trắng</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. Thanh đen dày với mũi tên ở đầu và cuối</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Thanh ngang xám</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 91: Trong biểu đồ Gantt, biểu tượng nào dùng để biểu diễn mốc thời gian?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">a. Hình thoi đen</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Hình thoi trắng</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Thanh đen dày</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Thanh ngang xám</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 92: _______ là dạng biểu đồ đặc biệt dùng để so sánh ngày thực tế và ngày theo kế hoạch.</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Gantt</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. AOA</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. PERT</div>
+<div class="answer" onclick="checkAnswer(this,true)">d. Biểu đồ lần vết Gantt</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 93: Mốc hoàn thành chậm hơn kế hoạch trong biểu đồ lần vết Gantt được biểu diễn bằng:</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Hình thoi đen</div>
+<div class="answer" onclick="checkAnswer(this,true)">b. Hình thoi trắng</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Thanh đen dày</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Thanh ngang xám</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 94: Đường găng là:</h3>
+<div class="answer" onclick="checkAnswer(this,true)">a. Đường dài nhất qua biểu đồ mạng</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Đường ngắn nhất</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Đường qua nhiều công việc nhất</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Đường qua ít công việc nhất</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 95: Trong quá trình thực hiện dự án, đường găng có thể thay đổi không?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Không thể</div>
+<div class="answer" onclick="checkAnswer(this,true)">b. Có thể</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Không thay đổi</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. a và c đúng</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 96: Lịch biểu trong quản lý dự án là gì?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Tài liệu tài chính</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Kế hoạch chi tiết về thời gian</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Báo cáo kết quả</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Danh sách rủi ro</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 97: Phương pháp nào thường dùng để xây dựng lịch biểu?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. SWOT</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. PEST</div>
+<div class="answer" onclick="checkAnswer(this,true)">C. Gantt</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Phân tích chi phí</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 98: Thành phần nào không phải là một phần của lịch biểu?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Thời gian bắt đầu</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Thời gian kết thúc</div>
+<div class="answer" onclick="checkAnswer(this,true)">C. Ngân sách</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Các hoạt động</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 99: Kỹ thuật nào giúp xác định thứ tự thực hiện các hoạt động?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Phân tích chi phí</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Phân tích rủi ro</div>
+<div class="answer" onclick="checkAnswer(this,true)">C. Kỹ thuật lập lịch</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. SWOT</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 100: Thời gian thực hiện một hoạt động được gọi là gì?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">A. Thời gian dự kiến</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Thời gian thực tế</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Thời gian hoàn thành</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Thời gian bắt đầu</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 101: Biểu đồ Gantt thể hiện điều gì?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Chi phí</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Thời gian thực hiện các hoạt động</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Rủi ro</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Nhân sự</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 102: Khi nào nên cập nhật lịch biểu dự án?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Chỉ khi bắt đầu</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Khi có thay đổi kế hoạch</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Khi kết thúc</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Không cần</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 103: Thời gian dự kiến cho một hoạt động được xác định dựa trên?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">A. Kinh nghiệm trước đây</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Ngẫu nhiên</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Ý kiến cá nhân</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Tài chính</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 104: Một hoạt động có thể bắt đầu khi nào?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Khi tất cả hoàn thành</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Khi có ngân sách</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Khi có nhân lực</div>
+<div class="answer" onclick="checkAnswer(this,true)">D. Khi hoạt động tiền đề hoàn thành</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 105: Kỹ thuật xác định thời gian tối thiểu cho dự án?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. SWOT</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. PERT</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Phân tích chi phí</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Phân tích rủi ro</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 106: Hoạt động có thể trì hoãn mà không ảnh hưởng tiến độ dự án gọi là:</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Thời gian dự kiến</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Thời gian tự do</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Thời gian tối thiểu</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Thời gian tối đa</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 107: Hoạt động bắt đầu ngay sau khi hoạt động khác kết thúc gọi là:</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Hoạt động tiền đề</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Hoạt động kế tiếp</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Hoạt động đồng thời</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Hoạt động phụ thuộc</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 108: Khi lập lịch, yếu tố quan trọng nhất là?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Ngân sách</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Thời gian</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Nhân lực</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Tài nguyên</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 109: Lợi ích của biểu đồ Gantt?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">A. Dễ theo dõi tiến độ</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Giảm chi phí</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Tăng sáng tạo</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. —</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 110: Khi nào nên dùng PERT?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Thời gian cố định</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Nhiều hoạt động không chắc chắn</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Ngân sách lớn</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Ít hoạt động</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 111: Ước lượng thời gian hoạt động bằng cách nào?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Cảm giác</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Dữ liệu lịch sử</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Ý kiến cá nhân</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Ngân sách</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 112: Hoạt động thực hiện song song gọi là:</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Phụ thuộc</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Đồng thời</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Tiền đề</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Kế tiếp</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 113: Để đảm bảo tính khả thi khi lập lịch cần:</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Ngân sách lớn</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Tài nguyên sẵn có</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Nhân lực dồi dào</div>
+<div class="answer" onclick="checkAnswer(this,true)">D. Tất cả các yếu tố trên</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 114: Yếu tố quan trọng trong lập lịch?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Đồng thuận</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Thời gian</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Chi phí</div>
+<div class="answer" onclick="checkAnswer(this,true)">D. Tất cả các yếu tố trên</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 115: Khi nào nên xem xét lại lịch biểu?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">A. Khi có thay đổi</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Khi kết thúc</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Khi có vấn đề</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Không cần</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 116: Hoạt động bị ảnh hưởng yếu tố bên ngoài gọi là:</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Độc lập</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Phụ thuộc</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Không chắc chắn</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Chính</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 117: Thời gian tối thiểu hoàn thành dự án gọi là:</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Dự kiến</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Thực tế</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Tối đa</div>
+<div class="answer" onclick="checkAnswer(this,true)">D. Tối thiểu</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 118: Để đảm bảo tính chính xác khi lập lịch cần:</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Dữ liệu lịch sử</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Kinh nghiệm</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Ý kiến nhóm</div>
+<div class="answer" onclick="checkAnswer(this,true)">D. Tất cả các yếu tố trên</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 119: Quản lý chi phí dự án bao gồm:</h3>
+<div class="answer" onclick="checkAnswer(this,true)">A. Lập kế hoạch, theo dõi, kiểm soát</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Chỉ lập kế hoạch</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Chỉ theo dõi</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Chỉ kiểm soát</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 120: Chi phí nào không tính vào ngân sách dự án?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Nhân công</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Vật liệu</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Quản lý</div>
+<div class="answer" onclick="checkAnswer(this,true)">D. Chi phí cá nhân không liên quan</div>
+</div>
+<div class="quiz-box">
+<h3>Câu 121: Khi nào nên lập ngân sách cho dự án?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Sau khi dự án bắt đầu</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Trước khi dự án bắt đầu</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Trong quá trình thực hiện dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Không cần lập ngân sách</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 122: Chi phí cố định là gì?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Chi phí thay đổi theo khối lượng công việc</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Chi phí không thay đổi theo khối lượng công việc</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Chi phí phát sinh ngẫu nhiên</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Chi phí không thể dự đoán</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 123: Chi phí biến đổi là gì?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Chi phí không thay đổi theo khối lượng công việc</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Chi phí thay đổi theo khối lượng công việc</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Chi phí cố định</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Chi phí không thể dự đoán</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 124: Phân tích chi phí - lợi ích là gì?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">A. So sánh chi phí và lợi ích của một dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Chỉ tính toán chi phí</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Chỉ tính toán lợi ích</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Không liên quan đến dự án</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 125: Ngân sách dự án là gì?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">A. Tổng chi phí dự kiến cho dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Chi phí thực tế đã chi</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Chi phí cho một hoạt động cụ thể</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Chi phí không xác định</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 126: Chi phí không thể dự đoán trong dự án được gọi là gì?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Chi phí cố định</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Chi phí biến đổi</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Chi phí ngẫu nhiên</div>
+<div class="answer" onclick="checkAnswer(this,true)">D. Chi phí ẩn</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 127: Khi nào nên xem xét lại ngân sách dự án?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">A. Khi có thay đổi trong kế hoạch</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Chỉ khi dự án kết thúc</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Chỉ khi có vấn đề</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Không cần xem xét lại</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 128: Chi phí thực tế là gì?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Chi phí dự kiến</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Chi phí đã chi trong thực tế</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Chi phí ước tính</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Chi phí không xác định</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 129: Phương pháp nào thường được sử dụng để ước lượng chi phí?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Phân tích SWOT</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Phân tích PERT</div>
+<div class="answer" onclick="checkAnswer(this,true)">C. Phân tích chi phí</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Phân tích rủi ro</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 130: Chi phí ẩn là gì?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">A. Chi phí không được ghi nhận</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Chi phí đã chi</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Chi phí cố định</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Chi phí biến đổi</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 132: Khi lập ngân sách, yếu tố nào là quan trọng nhất?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Thời gian</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Chi phí</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Nhân lực</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Tài nguyên</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 133: Chi phí dự kiến cho một hoạt động được xác định dựa trên?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">A. Kinh nghiệm trước đây</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Sự ngẫu nhiên</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Ý kiến cá nhân</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Tình hình tài chính</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 134: Khi nào nên sử dụng phương pháp ước lượng chi phí?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Khi dự án đã hoàn thành</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Khi dự án đang thực hiện</div>
+<div class="answer" onclick="checkAnswer(this,true)">C. Khi lập kế hoạch dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Không cần sử dụng</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 135: Chi phí nào có thể thay đổi trong quá trình thực hiện dự án?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Chi phí cố định</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Chi phí biến đổi</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Chi phí ẩn</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Chi phí không xác định</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 136: Khi nào nên sử dụng phương pháp phân tích chi phí?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">A. Khi lập kế hoạch dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Khi dự án đã hoàn thành</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Khi có vấn đề về ngân sách</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Không cần sử dụng</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 137: Ước lượng chi phí là gì?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Dự đoán thời gian hoàn thành dự án</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Dự đoán chi phí cần thiết để hoàn thành dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Dự đoán số lượng nhân sự cần thiết</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Dự đoán rủi ro trong dự án</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 138: Phương pháp nào giúp ước lượng chi phí chi tiết nhất?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Phương pháp top-down</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Phương pháp bottom-up</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Phương pháp analog</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Phương pháp parametric</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 139: Chi phí nào thường không được dự đoán chính xác?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Chi phí nhân sự</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Chi phí vật liệu</div>
+<div class="answer" onclick="checkAnswer(this,true)">C. Chi phí rủi ro</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Chi phí cố định</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 140: Phương pháp nào giúp ước lượng chi phí dựa trên các yếu tố định lượng?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Phương pháp Delphi</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Phương pháp parametric</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Phương pháp analog</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Phương pháp bottom-up</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 141: Khi ước lượng chi phí, yếu tố nào là quan trọng nhất?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Thời gian</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Phạm vi dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Nhân sự</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Rủi ro</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 142: Chi phí nào thường được ước lượng dựa trên kinh nghiệm?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Chi phí vật liệu</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Chi phí nhân sự</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Chi phí gián tiếp</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Chi phí rủi ro</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 143: Chi phí nào thường được coi là chi phí phát sinh?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Chi phí nhân sự</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Chi phí vật liệu</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Chi phí cho thiết bị</div>
+<div class="answer" onclick="checkAnswer(this,true)">D. Chi phí cho rủi ro</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 144: Khi nào nên sử dụng phương pháp ước lượng chi phí bottom-up?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Khi dự án nhỏ</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Khi dự án lớn và phức tạp</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Khi không có dữ liệu lịch sử</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Khi có ngân sách hạn chế</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 145: Chi phí nào thường được ước lượng bằng cách sử dụng các mô hình toán học?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Chi phí nhân sự</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Chi phí vật liệu</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Chi phí gián tiếp</div>
+<div class="answer" onclick="checkAnswer(this,true)">D. Chi phí parametric</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 146: Phương pháp nào giúp ước lượng chi phí dựa trên các dự án trước đó?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Phương pháp Delphi</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Phương pháp analog</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Phương pháp parametric</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Phương pháp bottom-up</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 147: Chi phí nào thường được coi là chi phí không thể tránh khỏi?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Chi phí nhân sự</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Chi phí vật liệu</div>
+<div class="answer" onclick="checkAnswer(this,true)">C. Chi phí cố định</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Chi phí gián tiếp</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 148: Khi nào nên sử dụng phương pháp ước lượng chi phí parametric?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">A. Khi có dữ liệu lịch sử</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Khi không có dữ liệu lịch sử</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Khi dự án nhỏ</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Khi dự án lớn</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 149: Chi phí nào thường được ước lượng dựa trên các yếu tố định tính?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Chi phí vật liệu</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Chi phí nhân sự</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Chi phí gián tiếp</div>
+<div class="answer" onclick="checkAnswer(this,true)">D. Chi phí rủi ro</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 150: Chi phí nào thường được ước lượng dựa trên các yếu tố tài chính?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Chi phí nhân sự</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Chi phí vật liệu</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Chi phí gián tiếp</div>
+<div class="answer" onclick="checkAnswer(this,true)">D. Chi phí đầu tư</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 151: Kiểm soát chi phí là gì?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">A. Theo dõi và điều chỉnh chi phí trong dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Dự đoán chi phí cho dự án mới</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Đánh giá hiệu suất của nhân sự</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Lập kế hoạch cho các hoạt động trong dự án</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 152: Ngân sách dự án thường được lập ở giai đoạn nào?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Giai đoạn khởi động</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Giai đoạn lập kế hoạch</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Giai đoạn thực hiện</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Giai đoạn kết thúc</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 153: Phương pháp nào giúp kiểm soát chi phí hiệu quả nhất?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Phân tích chi phí - lợi ích</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Phân tích giá trị thu được (EVM)</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Phân tích SWOT</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Phân tích PEST</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 154: Khi kiểm soát chi phí, chỉ số nào thường được sử dụng?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">A. Chỉ số hiệu suất chi phí (CPI)</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Chỉ số hiệu suất thời gian (SPI)</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Chỉ số rủi ro</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Chỉ số lợi nhuận</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 155: Phương pháp nào giúp kiểm soát chi phí dựa trên các chỉ số hiệu suất?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Phân tích chi phí - lợi ích</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Phân tích giá trị thu được (EVM)</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Phân tích SWOT</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Phân tích PEST</div>
+</div>
+<div class="quiz-box">
+<h3>Câu 156: Khi lập ngân sách, yếu tố nào không cần thiết phải xem xét?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Thời gian</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Phạm vi dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Chi phí gián tiếp</div>
+<div class="answer" onclick="checkAnswer(this,true)">D. Sở thích cá nhân của quản lý</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 157: Khi kiểm soát chi phí, điều gì là quan trọng nhất?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">A. Theo dõi chi phí thực tế so với ngân sách</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Dự đoán chi phí cho dự án mới</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Đánh giá hiệu suất của nhân sự</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Lập kế hoạch cho các hoạt động trong dự án</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 158: Ai là người chịu trách nhiệm chính về chất lượng trong một dự án?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">A. Quản lý dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Nhóm phát triển</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Khách hàng</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Tất cả các bên liên quan</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 159: Công cụ nào thường được sử dụng để phân tích nguyên nhân gốc rễ của vấn đề chất lượng?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">A. Biểu đồ Pareto</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Biểu đồ Gantt</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Ma trận RACI</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Biểu đồ dòng chảy</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 160: Khái niệm nào mô tả việc kiểm tra sản phẩm trong suốt quá trình phát triển?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Kiểm soát chất lượng</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Đảm bảo chất lượng</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Kiểm tra chất lượng</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Đánh giá chất lượng</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 161: Tiêu chuẩn nào được sử dụng phổ biến nhất trong quản lý chất lượng?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">A. ISO 9001</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. CMMI</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Six Sigma</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. PMBOK</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 162: Khái niệm nào mô tả việc lập kế hoạch cho các hoạt động đảm bảo chất lượng?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">A. Kế hoạch chất lượng</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Kiểm soát chất lượng</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Đánh giá chất lượng</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Phân tích chất lượng</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 163: Công cụ nào được sử dụng để theo dõi và kiểm soát chất lượng trong dự án?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">A. Biểu đồ kiểm soát</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Biểu đồ Gantt</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Ma trận SWOT</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Biểu đồ dòng chảy</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 164: Ai là người xác định các yêu cầu chất lượng cho sản phẩm?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Quản lý dự án</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Khách hàng</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Nhóm phát triển</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Tất cả các bên liên quan</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 165: Khái niệm nào mô tả việc so sánh hiệu suất của một tổ chức với các tổ chức khác?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Đánh giá chất lượng</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Benchmarking</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Kiểm soát chất lượng</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Đảm bảo chất lượng</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 166: Phương pháp nào được sử dụng để phân tích dữ liệu và cải tiến quy trình?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">A. Six Sigma</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Agile</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Waterfall</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Lean</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 167: Ai là người thực hiện các hoạt động kiểm tra chất lượng trong dự án?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Quản lý dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Nhóm phát triển</div>
+<div class="answer" onclick="checkAnswer(this,true)">C. Nhóm kiểm tra</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Tất cả các bên liên quan</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 168: Khái niệm Six Sigma chủ yếu nhằm mục đích gì?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Tăng doanh thu</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Giảm biến động và cải thiện chất lượng</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Tăng số lượng sản phẩm</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Cải thiện mối quan hệ khách hàng</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 169: Mô hình nào được sử dụng trong Six Sigma để cải tiến quy trình?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. PDCA</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. DMAIC</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. SWOT</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. PERT</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 170: Trong mô hình DMAIC, bước đầu tiên là gì?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Đo lường</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Phân tích</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Cải tiến</div>
+<div class="answer" onclick="checkAnswer(this,true)">D. Xác định</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 171: Ai là người chịu trách nhiệm chính trong một dự án Six Sigma?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Quản lý dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Green Belt</div>
+<div class="answer" onclick="checkAnswer(this,true)">C. Black Belt</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Tất cả các bên liên quan</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 172: Khái niệm nào mô tả sự biến động trong quy trình?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Độ chính xác</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Độ tin cậy</div>
+<div class="answer" onclick="checkAnswer(this,true)">C. Độ biến thiên</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Độ bền</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 173: Công cụ nào thường được sử dụng để phân tích nguyên nhân gốc rễ trong Six Sigma?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">A. Biểu đồ Pareto</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Biểu đồ Gantt</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Ma trận RACI</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Biểu đồ dòng chảy</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 174: Six Sigma sử dụng bao nhiêu mức độ sigma để đo lường chất lượng?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. 1</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. 3</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. 5</div>
+<div class="answer" onclick="checkAnswer(this,true)">D. 6</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 177: Trong Six Sigma, ai là người thực hiện các dự án cải tiến?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Yellow Belt</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Green Belt</div>
+<div class="answer" onclick="checkAnswer(this,true)">C. Black Belt</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Tất cả các bên liên quan</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 178: Bước nào trong mô hình DMAIC liên quan đến việc thu thập dữ liệu?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">A. Đo lường</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Phân tích</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Cải tiến</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Kiểm soát</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 179: Six Sigma có thể áp dụng cho lĩnh vực nào?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Chỉ sản xuất</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Chỉ dịch vụ</div>
+<div class="answer" onclick="checkAnswer(this,true)">C. Tất cả các lĩnh vực</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Chỉ công nghệ thông tin</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 180: Bước nào trong mô hình DMAIC liên quan đến việc xác định các giải pháp?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Đo lường</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Phân tích</div>
+<div class="answer" onclick="checkAnswer(this,true)">C. Cải tiến</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Kiểm soát</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 181: Mô hình Crosby chủ yếu tập trung vào:</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Chi phí</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Chất lượng</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Thời gian</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Tài nguyên</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 182: Chi phí chất lượng bao gồm:</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Chi phí sản xuất</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Chi phí bảo trì</div>
+<div class="answer" onclick="checkAnswer(this,true)">C. Chi phí phòng ngừa và chi phí thất bại</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Chi phí marketing</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 183: Một trong những nguyên tắc chính của mô hình Crosby là:</h3>
+<div class="answer" onclick="checkAnswer(this,true)">A. Chất lượng là trách nhiệm của tất cả mọi người</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Chất lượng chỉ là trách nhiệm của bộ phận QA</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Chất lượng không cần phải đo lường</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Chất lượng chỉ quan trọng trong giai đoạn cuối của dự án</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 184: Crosby cho rằng việc cải tiến chất lượng nên được thực hiện:</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Một lần duy nhất</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Theo chu kỳ liên tục</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Chỉ khi có vấn đề</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Chỉ trong giai đoạn đầu của dự án</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 185: Mô hình Crosby khuyến khích việc:</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Tập trung vào sản phẩm</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Tập trung vào quy trình</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Tập trung vào khách hàng</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Tập trung vào lợi nhuận</div>
+</div>
+<div class="quiz-box">
+<h3>Câu 186: Mô hình CMM được phát triển để:</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Đánh giá chất lượng sản phẩm</div>
+<div class="answer" onclick="checkAnswer(this,true)">B. Cải thiện quy trình phát triển phần mềm</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Tăng cường marketing</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Giảm chi phí sản xuất</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 187: Mô hình CMM có bao nhiêu cấp độ trưởng thành?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. 3</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. 4</div>
+<div class="answer" onclick="checkAnswer(this,true)">C. 5</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. 6</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 188: Cấp độ đầu tiên trong mô hình CMM là:</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Định hình</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Quản lý</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Được định nghĩa</div>
+<div class="answer" onclick="checkAnswer(this,true)">D. Khởi đầu</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 189: CMM khuyến khích tổ chức:</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Tập trung vào công nghệ mới</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Tăng cường kiểm tra sản phẩm</div>
+<div class="answer" onclick="checkAnswer(this,true)">C. Cải tiến quy trình một cách liên tục</div>
+<div class="answer" onclick="checkAnswer(this,false)">D. Giảm số lượng nhân viên</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 190: Mô hình CMM giúp tổ chức đạt được:</h3>
+<div class="answer" onclick="checkAnswer(this,false)">A. Chất lượng sản phẩm cao hơn</div>
+<div class="answer" onclick="checkAnswer(this,false)">B. Chi phí thấp hơn</div>
+<div class="answer" onclick="checkAnswer(this,false)">C. Thời gian phát triển ngắn hơn</div>
+<div class="answer" onclick="checkAnswer(this,true)">D. Tất cả các yếu tố trên</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 191: Mục tiêu hoàn thiện của Six Sigma là đạt được không quá khiếm khuyết trên một triệu cơ hội.</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. 6</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. 9</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. 3,4</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. 1</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 192: Thứ tự ưu tiên để thực hiện kiểm thử trên các dự án CNTT là gì?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">a. kiểm thử đơn vị, kiểm thử tích hợp, kiểm thử hệ thống, kiểm thử chấp nhận người dùng</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. thử nghiệm đơn vị, thử nghiệm hệ thống, thử nghiệm tích hợp, thử nghiệm chấp nhận người dùng</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. thử nghiệm đơn vị, thử nghiệm hệ thống, thử nghiệm chấp nhận người dùng, thử nghiệm tích hợp</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. thử nghiệm đơn vị, thử nghiệm tích hợp, thử nghiệm chấp nhận người dùng, thử nghiệm hệ thống</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 193: Nội dung nào sau đây không thuộc quản lý nguồn nhân lực của dự án?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">a. ước tính nguồn lực</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. mua lại nhóm dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. phát triển nhóm dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. quản lý nhóm dự án</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 194: Khiến mọi người tham gia vào một hoạt động để hưởng thụ.</h3>
+<div class="answer" onclick="checkAnswer(this,true)">a. Động lực nội tại</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Động lực bên ngoài</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Động lực bản thân</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Động lực xã hội</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 195: Ở dưới cùng của kim tự tháp nhu cầu Maslow là nhu cầu:</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. tự hiện thực hóa</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. kính trọng</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. sự an toàn</div>
+<div class="answer" onclick="checkAnswer(this,true)">d. sinh lý học</div>
+</div>
+<div class="quiz-box">
+<div class="quiz-box">
+<h3>Câu 196: Theo lý thuyết nhu cầu có được của McClelland, những người mong muốn quan hệ hài hòa với người khác và cần cảm thấy được chấp nhận có nhu cầu cao.</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. xã hội</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. thành tích</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. sự liên kết</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. bên ngoài</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 197: Quyền lực dựa trên sức hút cá nhân của một người.</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Chi nhánh</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Giới thiệu</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. Tính cách</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. Hợp pháp</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 198: Một bản đồ công việc của một dự án, như được mô tả trong WBS, cho những người chịu trách nhiệm để thực hiện công việc.</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. sơ đồ tổ chức dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. xác định công việc và quy trình phân công</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. biểu đồ tài nguyên</div>
+<div class="answer" onclick="checkAnswer(this,true)">d. ma trận phân công trách nhiệm</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 199: Một kế hoạch quản lý nhân sự thường bao gồm một nguồn lực là biểu đồ cột hiển thị số lượng tài nguyên được giao cho dự án theo thời gian.</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. đồ thị</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. đồ thị</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. biểu đồ (histogram)</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. mốc thời gian</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 200: Kỹ thuật nào dùng để giải quyết xung đột tài nguyên bằng cách trì hoãn nhiệm vụ?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. tải tài nguyên</div>
+<div class="answer" onclick="checkAnswer(this,true)">b. san lấp nguồn lực (resource leveling)</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. phân tích đường dẫn quan trọng</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. quá phân bổ</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 201: Năm giai đoạn phát triển nhóm của Tuckman theo đúng thứ tự là gì?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">a. hình thành, dữ dội, định mức, biểu diễn, hoãn lại</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. bão tố, hình thành, định mức, biểu diễn, hoãn lại</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. định mức, hình thành, bão tố, biểu diễn, hoãn lại</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. hình thành, làm mưa làm gió, biểu diễn, định mức, hoãn lại</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 202: Công cụ nào sau đây không phải là công cụ hoặc kỹ thuật quản lý nhóm dự án?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. quan sát và trò chuyện</div>
+<div class="answer" onclick="checkAnswer(this,true)">b. đánh giá hiệu quả dự án</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. quản trị xung đột</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. phản hồi nhóm</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 203: Mối đe dọa lớn nhất đối với sự thành công của bất kỳ dự án nào là gì?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. thiếu kinh phí thích hợp</div>
+<div class="answer" onclick="checkAnswer(this,true)">b. thất bại trong giao tiếp</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. kỹ năng nghe kém</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. nhân sự không đủ</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 204: Trong các tương tác mặt đối mặt, hầu hết thông tin được truyền đạt bằng cách nào?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. bằng giọng nói</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. bởi những lời nói</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. bằng ngôn ngữ cơ thể</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. theo địa điểm</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 205: Điều nào sau đây không phải là quy trình quản lý truyền thông dự án?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. lập kế hoạch quản lý truyền thông</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. kiểm soát thông tin liên lạc</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. quản lý thông tin liên lạc</div>
+<div class="answer" onclick="checkAnswer(this,true)">d. quản lý các bên liên quan</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 206: Chiến lược tốt nhất để người quản lý dự án đưa ra tin xấu là gì?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. kể một câu chuyện cười trước</div>
+<div class="answer" onclick="checkAnswer(this,true)">b. báo cho quản lý cấp cao càng sớm càng tốt</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. yêu cầu nhà vô địch dự án cung cấp tin</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. tạo tiền đề bằng cách đưa tin vào ngữ cảnh</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 207: Là sự không chắc chắn có thể ảnh hưởng tích cực hoặc tiêu cực đến mục tiêu dự án.</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. tiện ích rủi ro</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. chấp nhận rủi ro</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. quản lý rủi ro</div>
+<div class="answer" onclick="checkAnswer(this,true)">d. rủi ro</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 208: Một người chịu rủi ro là người sẵn sàng trả giá để chấp nhận rủi ro nhằm đạt lợi nhuận cao hơn.</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. ác cảm</div>
+<div class="answer" onclick="checkAnswer(this,true)">b. tìm kiếm (seeking)</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. trung tính</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. nhận thức</div>
+</div>
+
+<h3>Câu 209: Quy trình quản lý rủi ro nào liên quan đến việc ưu tiên các rủi ro dựa trên xác suất của chúng và tác động của sự xuất hiện?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. lập kế hoạch quản lý rủi ro</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. xác định rủi ro</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. thực hiện phân tích rủi ro định tính</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. thực hiện phân tích rủi ro định lượng</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 210: Dự án của bạn liên quan đến việc sử dụng bản phát hành mới của một ứng dụng phần mềm thông thường, nhưng nếu bản phát hành không khả dụng, nhóm có kế hoạch sử dụng bản phát hành hiện tại.</h3>
+<div class="answer" onclick="checkAnswer(this,true)">a. dự phòng</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. dự phòng</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. dự trữ</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. giảm nhẹ</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 211: Công cụ xác định rủi ro nào liên quan đến việc đạt được sự đồng thuận giữa một nhóm chuyên gia bằng cách sử dụng đầu vào ẩn danh?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. cơ cấu phân chia rủi ro</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. động não</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. phỏng vấn</div>
+<div class="answer" onclick="checkAnswer(this,true)">d. Kỹ thuật Delphi</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 212: Rủi ro là một tài liệu chứa đựng kết quả của nhiều biện pháp quản lý rủi ro khác nhau và thường được hiển thị dưới dạng bảng hoặc bảng tính.</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. kế hoạch quản lý</div>
+<div class="answer" onclick="checkAnswer(this,true)">b. Đăng ký</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. cấu trúc phá vỡ</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. ma trận xác suất / tác động</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 213: Là các chỉ số hoặc triệu chứng của các sự kiện rủi ro thực tế.</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Xác suất</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Tác động</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Xem các mục trong danh sách</div>
+<div class="answer" onclick="checkAnswer(this,true)">d. Gây nên (triggers)</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 214: Giả sử có 30% cơ hội mất $10.000 và 70% cơ hội kiếm được $100.000. Giá trị ước tính (EMV) là bao nhiêu?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. $30.000</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. $70.000</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. $67,000</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. $67,000</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 215: Là một công cụ phân tích rủi ro định lượng sử dụng mô hình của một hệ thống để phân tích hành vi hoặc hiệu suất mong đợi.</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. Mô phỏng (simulation)</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. Phân tích độ nhạy</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. Phân tích Monte Carlo</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. EMV</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 216: Nhóm dự án quyết định không sử dụng bản phát hành sắp tới của phần mềm để tránh trễ tiến độ. Đây là chiến lược phản ứng rủi ro nào?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">a. sự tránh né</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. chấp thuận</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. Sự chuyển di</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. giảm nhẹ</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 217: Lý do hàng đầu cho việc gia công các dịch vụ CNTT trên toàn cầu là gì?</h3>
+<div class="answer" onclick="checkAnswer(this,true)">a. giảm chi phí</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. sự thiếu hụt nhân sự có trình độ</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. giảm thời gian tiếp thị</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. tăng doanh thu</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 218: Thuê chuyên gia trong một lĩnh vực nhất định để đào tạo ngắn hạn thuộc lý do nào của thuê ngoài?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. giảm giá</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. tập trung vào hoạt động kinh doanh cốt lõi</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. tiếp cận các kỹ năng và công nghệ</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. cung cấp sự linh hoạt</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 219: Các nhà cung cấp và công dân có liên quan là ví dụ về loại bên liên quan nào?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. nội bộ</div>
+<div class="answer" onclick="checkAnswer(this,true)">b. bên ngoài (external)</div>
+<div class="answer" onclick="checkAnswer(this,false)">c. ủng hộ</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. không ủng hộ</div>
+</div>
+
+<div class="quiz-box">
+<h3>Câu 220: Loại thông tin nào về các bên liên quan không được đưa vào sổ đăng ký các bên liên quan?</h3>
+<div class="answer" onclick="checkAnswer(this,false)">a. nhận biết</div>
+<div class="answer" onclick="checkAnswer(this,false)">b. phân loại</div>
+<div class="answer" onclick="checkAnswer(this,true)">c. thẩm định, lượng định, đánh giá</div>
+<div class="answer" onclick="checkAnswer(this,false)">d. mức độ tương tác</div>
+</div>
+
+
+
+<script>
+    function checkAnswer(element, isCorrect) {
+        // Chỉ reset đáp án trong câu đang chọn
+        const quizBox = element.closest('.quiz-box');
+        const answers = quizBox.querySelectorAll('.answer');
+
+        answers.forEach(a => {
+            a.classList.remove('correct', 'wrong');
+        });
+
+        if (isCorrect) {
+            element.classList.add('correct');
+        } else {
+            element.classList.add('wrong');
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Đồ Uống - Cửa Hàng Nước Uống</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #74b9ff, #a29bfe);
+            color: #333;
+            min-height: 100vh;
+        }
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, #0984e3, #00b894);
+            color: white;
+            padding: 40px 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 600;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .drink {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            position: relative;
+        }
+        .drink:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+        }
+        .drink img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .drink h3 {
+            margin: 15px 0 10px;
+            font-size: 1.4em;
+            color: #0984e3;
+        }
+        .drink p {
+            margin: 0 0 15px;
+            font-weight: 600;
+            color: #00b894;
+        }
+        .drink button {
+            background: #0984e3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background 0.3s ease;
+            margin-bottom: 15px;
+        }
+        .drink button:hover {
+            background: #74b9ff;
+        }
+        form {
+            max-width: 600px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        form h2 {
+            text-align: center;
+            color: #0984e3;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border-color 0.3s ease;
+        }
+        input:focus, select:focus {
+            border-color: #0984e3;
+            outline: none;
+        }
+        button[type="submit"] {
+            background: linear-gradient(135deg, #00b894, #0984e3);
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1.2em;
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+        button[type="submit"]:hover {
+            transform: translateY(-2px);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0,0,0,0.1);
+            color: white;
+            margin-top: 40px;
+        }
+        footer i {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-coffee"></i> Chào Mừng Đến Với Cửa Hàng Đồ Uống ThuHun</h1>
+        <p>Khám phá và đặt các loại đồ uống tươi ngon!</p>
+    </header>
+
+    <section class="menu">
+        <div class="drink">
+            <img src="anh1.jpg" alt="Cà Phê Đen">
+            <h3>Milk Tea</h3>
+            <p>Giá: thuhun VND</p>
+            <button onclick="alert('Đã thêm vào giỏ!')">Thêm vào Giỏ</button>
+        </div>
+        <div class="drink">
+            <img src="anh2.jpg" alt="Trà Xanh">
+            <h3>Trà Dâu</h3>
+            <p>Giá: thuhun VND</p>
+            <button onclick="alert('Đã thêm vào giỏ!')">Thêm vào Giỏ</button>
+        </div>
+        <div class="drink">
+            <img src="anh3.jpg" alt="Nước Ép Cam">
+            <h3>Mãng Cầu </h3>
+            <p>Giá: thuhun VND</p>
+            <button onclick="alert('Đã thêm vào giỏ!')">Thêm vào Giỏ</button>
+        </div>
+        <div class="drink">
+            <img src="anh5.jpg" alt="Sinh Tố Bơ">
+            <h3>Sinh Tố Bơ</h3>
+            <p>Giá: thuhun VND</p>
+            <button onclick="alert('Đã thêm vào giỏ!')">Thêm vào Giỏ</button>
+        </div>
+    </section>
+
+    <form action="#" method="post">
+        <h2><i class="fas fa-shopping-cart"></i> Đặt Hàng</h2>
+        <label for="name">Tên của bạn:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="drink">Chọn đồ uống:</label>
+        <select id="drink" name="drink" required>
+            <option value="">-- Chọn --</option>
+            <option value="cafe">Cà Phê Đen - 30,000 VND</option>
+            <option value="tra">Trà Xanh - 25,000 VND</option>
+            <option value="nuocep">Nước Ép Cam - 40,000 VND</option>
+            <option value="sinhto">Sinh Tố Bơ - 50,000 VND</option>
+        </select>
+
+        <label for="quantity">Số lượng:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required>
+
+        <label for="address">Địa chỉ giao hàng:</label>
+        <input type="text" id="address" name="address" required>
+
+        <button type="submit">Đặt Hàng Ngay</button>
+    </form>
+
+    <footer>
+        <p><i class="fas fa-heart"></i> Cảm ơn bạn đã ghé thăm! Liên hệ: info@drinkstore.vn</p>
+    </footer>
+</body>
+</html>
